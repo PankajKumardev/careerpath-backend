@@ -31,10 +31,10 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        default: 'user'  // Possible values could be 'user', 'admin'
+        default: 'user'  // admin or user
     }
 }, {
-    timestamps: true  // Automatically creates createdAt and updatedAt fields
+    timestamps: true  //creates createdAt and updatedAt fields
 });
 
 const User = mongoose.model('User', userSchema);
