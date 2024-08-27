@@ -7,10 +7,6 @@ const path = require('path');
 const { z } = require('zod');
 const upload = require('../middleware/uploadMiddleware');
 
-
-
-
-
 exports.uploadProfilePicture = (req, res) => {
     if (!req.file) {
         return res.status(400).json({ message: 'No file uploaded' });
